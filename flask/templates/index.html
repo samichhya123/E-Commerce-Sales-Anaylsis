@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Analysis Prediction</title>
+  </head>
+  <body>
+    <h1>E-Commerce Sales Analysis</h1>
+    <form action="/predict" method="POST">
+      <label for="sku_code">SKU Code:</label>
+      <input type="text" id="sku_code" name="SKU Code" required /><br /><br />
+
+      <label for="design_no">Design No.:</label>
+      <input
+        type="text"
+        id="design_no"
+        name="Design No."
+        required
+      /><br /><br />
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="Category" required /><br /><br />
+
+      <label for="size">Size:</label>
+      <input type="text" id="size" name="Size" required /><br /><br />
+
+      <label for="color">Color:</label>
+      <input type="text" id="color" name="Color" required /><br /><br />
+
+      <button type="submit">Predict Stock</button>
+    </form>
+  </body>
+</html>
